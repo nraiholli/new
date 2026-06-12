@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandi Medicals | Trusted Pharmacy Since 1987</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <div class="logo-text">
+                    <h1>NANDI MEDICALS</h1>
+                    <span>SINCE 1987</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact & Upload</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Your Health, Our Heritage</h2>
+            <p>Serving our community with genuine medicines, healthcare essentials, and trusted expert advice for nearly four decades.</p>
+            <a href="#contact" class="btn">Order / Upload Prescription</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-title">
+            <h3>Our Services</h3>
+            <div class="underline"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-pills"></i>
+                <h4>Genuine Medicines</h4>
+                <p>100% authentic prescription drugs and over-the-counter medications directly sourced.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-truck-medical"></i>
+                <h4>Home Delivery</h4>
+                <p>Quick and safe contactless delivery of your essential healthcare needs right to your doorstep.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-file-medical"></i>
+                <h4>Prescription Refills</h4>
+                <p>Easily skip the queue by uploading your prescription details online before dropping by.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Nearly 40 Years of Care</h3>
+                <p>Established in <strong>1987</strong>, Nandi Medicals has grown from a neighborhood chemist to a premier healthcare partner. Our cornerstone has always been unwavering quality, affordability, and personal pharmacological care.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Main Bazaar Road, Pharmacy Hub</p>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-envelope"></i> support@nandimedicals.com</p>
+                <p><i class="fa-solid fa-clock"></i> Open Daily: 8:00 AM - 11:00 PM</p>
+            </div>
+            
+            <div class="contact-form-box">
+                <h3>Quick Order & Prescription Upload</h3>
+                <form id="pharmacyForm">
+                    <input type="text" id="name" placeholder="Your Full Name" required>
+                    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                    <textarea id="message" rows="4" placeholder="List your medicines or special notes..."></textarea>
+                    
+                    <div class="file-upload">
+                        <label for="prescription"><i class="fa-solid fa-cloud-arrow-up"></i> Upload Prescription (Image/PDF)</label>
+                        <input type="file" id="prescription" accept="image/*,application/pdf">
+                        <span id="file-chosen">No file chosen</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">Submit Order</button>
+                </form>
+                <div id="formStatus" class="status-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nandi Medicals. All Rights Reserved. Serving Health Care Since 1987.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
