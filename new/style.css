@@ -84,7 +84,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 128, 128, 0.75), rgba(0, 77, 77, 0.85)), 
-                url('https://images.unsplash.com/photo-1586015555751-63bb77f4322a?q=80&w=1600') no-repeat center center/cover;
+                url('your-hero-background.jpg') no-repeat center center/cover; /* 💡 REPLACE WITH YOUR HERO IMAGE PATH */
     height: 70vh;
     display: flex;
     align-items: center;
@@ -182,13 +182,17 @@ nav ul li a:hover {
 /* About Section */
 .about {
     background-color: var(--accent-color);
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
 .about-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .about-text h3 {
@@ -301,6 +305,21 @@ footer {
     padding: 20px;
     margin-top: 40px;
     font-size: 0.9rem;
+}
+
+/* Custom Standard Images Styling */
+.about-image-wrapper {
+    max-width: 550px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    object-fit: cover;
 }
 
 /* Responsive adjustments */
